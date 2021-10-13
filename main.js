@@ -22,17 +22,38 @@ let handel = [{
     price:49,
     storlek:"large",
     rutten:false
+},
+{
+    name:"tomat",
+    price:5,
+    storlek:"large",
+    rutten:false
+},
+{
+    name:"sötpotatis",
+    price:150,
+    storlek:"large",
+    rutten:false
 }
+
 ]
 
 handel.forEach(item => {
-
-    let btn= document.createElement("button")
-    btn.innerText= "Buy"
-    container.appendChild(btn)
+    let diven = document.createElement("div")
+    let header = document.createElement("h2")
     let para3 = document.createElement("p")
-    para3.innerText = item.price+"$"
-    container.appendChild(para3)
+    let btn= document.createElement("button")
+    diven.classList="small-boxes"
+    header.innerText=item.name
+    para3.innerText = item.price+"$ "
+    btn.innerText= "Buy"
+    
+    diven.appendChild(header)
+    diven.appendChild(para3)
+    diven.appendChild(btn)
+    container.appendChild(diven)
+
+    
     btn.addEventListener("click", ()=>{
         
         total = total + item.price
@@ -41,4 +62,3 @@ handel.forEach(item => {
     })
 });
 para.innerText="Total " + total +"$"
-

@@ -1,0 +1,26 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    
+}
+
+
+.small-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 15%;
+    padding: 10px;
+}
+.rubrik{
+    padding: 15px;
+}
