@@ -1,1 +1,3 @@
-console.log("Hello friends")
+let myName = "Albin Lindell";
+
+console.log(`jag heter ${myname}`)
